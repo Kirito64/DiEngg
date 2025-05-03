@@ -32,13 +32,13 @@ graph TD
 ## 🔧 Tech Stack
 
 | Layer           | Tech/Tool                        |
-|----------------|----------------------------------|
-| Embeddings      | OpenAI (Ada), Cohere, or HuggingFace |
-| Vector DB       | Pinecone, Weaviate, or FAISS     |
-| Backend         | Python (FastAPI / Flask)         |
-| RAG Framework   | LangChain / Haystack             |
-| Interface       | Streamlit, React, or CLI         |
-| Deployment      | Docker + Render / Railway / GCP  |
+|-----------------|----------------------------------|
+| Embeddings      | OpenAI (Ada)                     |
+| Vector DB       | Milvus                           |
+| Backend         | Python (FastAPI)                 |
+| RAG Framework   | LangChain                        |
+| Interface       |  React, or CLI                   |
+| Deployment      | Docker                           |
 
 ---
 
@@ -95,12 +95,36 @@ All content is **chunked and embedded** into a vector DB for fast semantic searc
 
 ```bash
 diengg/
-│
-├── backend/              # FastAPI or Flask backend
-│   ├── main.py
-│   ├── rag_engine.py
-│   └── routes/
-│
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py              # FastAPI application entry point
+│   │   ├── config.py            # Configuration management
+│   │   ├── database/
+│   │   │   ├── __init__.py
+│   │   │   ├── milvus.py        # Milvus connection and operations
+│   │   │   └── models.py        # Data models
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── v1/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── diagnose.py  # Diagnosis endpoint
+│   │   │   │   ├── kb.py        # Knowledge base endpoints
+│   │   │   │   └── feedback.py  # Feedback endpoint
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── embeddings.py    # Embedding generation
+│   │   │   └── rag.py           # RAG implementation
+│   │   └── utils/
+│   │       ├── __init__.py
+│   │       ├── logging.py       # Logging configuration
+│   │       └── helpers.py       # Helper functions
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   ├── test_api.py
+│   │   └── test_core.py
+│   ├── requirements.txt
+│   └── .env.example
 ├── embeddings/           # Embedding + chunking logic
 │   └── embed_kb.py
 │
