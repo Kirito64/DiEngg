@@ -1,0 +1,282 @@
+[
+  {
+    "employee_id": "T001",
+    "name": "Anita Desai",
+    "role": "Field Service Engineer",
+    "skills": ["CNC Milling", "Siemens Controller", "Hydraulic Systems"],
+    "experience_years": 5,
+    "certifications": ["Siemens Level 2", "Mechanical Safety"],
+    "resolved_issues": [
+      "E42 - Spindle Overload",
+      "CNC axis misalignment",
+      "Coolant pump failure"
+    ],
+    "region": "South India"
+  },
+  {
+    "employee_id": "T002",
+    "name": "Ravi Kumar",
+    "role": "Technical Support - Level 2",
+    "skills": ["G-code Debugging", "Fanuc Controller", "VFD Tuning"],
+    "experience_years": 7,
+    "certifications": ["Fanuc Support Expert", "Electrical Safety"],
+    "resolved_issues": [
+      "G-code error 210",
+      "Drive overcurrent",
+      "PLC not responding"
+    ],
+    "region": "Pan India"
+  },
+  {
+    "employee_id": "T003",
+    "name": "Megha Sinha",
+    "role": "Application Engineer",
+    "skills": ["CAM Programming", "Toolpath Optimization", "Training"],
+    "experience_years": 4,
+    "certifications": ["Fusion360 Advanced", "CNC Programming Expert"],
+    "resolved_issues": [
+      "Tool chatter",
+      "Improper finish",
+      "Feed rate mismatch"
+    ],
+    "region": "West India"
+  },
+  {
+    "employee_id": "T004",
+    "name": "Deepak Narayanan",
+    "role": "Field Service Engineer",
+    "skills": ["CNC Lathe", "Fanuc Controller", "Spindle Diagnostics"],
+    "experience_years": 6,
+    "certifications": ["Fanuc Troubleshooting", "Advanced CNC Repair"],
+    "resolved_issues": [
+      "Spindle vibration",
+      "Lathe turret misalignment",
+      "Emergency stop failure"
+    ],
+    "region": "North India"
+  },
+  {
+    "employee_id": "T005",
+    "name": "Sneha Iyer",
+    "role": "Field Service Engineer",
+    "skills": ["Laser Cutting Systems", "Electrical Wiring", "Machine Calibration"],
+    "experience_years": 3,
+    "certifications": ["Laser System Basics", "Safety Compliance"],
+    "resolved_issues": [
+      "Laser beam misfocus",
+      "XY-axis calibration drift",
+      "Sensor fault alarm"
+    ],
+    "region": "Southwest India"
+  },
+  {
+    "employee_id": "T006",
+    "name": "Harsh Mehta",
+    "role": "Field Service Engineer",
+    "skills": ["Servo Drives", "PLC Troubleshooting", "Power Supply Units"],
+    "experience_years": 8,
+    "certifications": ["PLC Expert", "Electrical Power Systems"],
+    "resolved_issues": [
+      "Drive failure",
+      "Low voltage error",
+      "PLC communication timeout"
+    ],
+    "region": "West India"
+  },
+  {
+    "employee_id": "T007",
+    "name": "Priya Nair",
+    "role": "Senior Field Service Engineer",
+    "skills": ["CNC 5-Axis Machining", "Siemens SINUMERIK", "High-Precision Alignment"],
+    "experience_years": 10,
+    "certifications": ["Siemens Level 3", "Precision Metrology"],
+    "resolved_issues": [
+      "5-axis coordinate mismatch",
+      "Thermal drift compensation",
+      "Ultra-fine surface finish defects"
+    ],
+    "region": "East India"
+  },
+  {
+    "employee_id": "T008",
+    "name": "Vikram Joshi",
+    "role": "Technical Support Manager",
+    "skills": ["Team Leadership", "Escalation Management", "SLA Compliance"],
+    "experience_years": 12,
+    "certifications": ["ITIL Foundation", "Service Excellence"],
+    "resolved_issues": [
+      "Multi-site outage coordination",
+      "Critical escalation bridging",
+      "Remote tools rollout"
+    ],
+    "region": "Pan India"
+  },
+  {
+    "employee_id": "T009",
+    "name": "Ayesha Khan",
+    "role": "IoT & Telemetry Specialist",
+    "skills": ["MQTT/OPC-UA", "Edge Computing", "Data Visualization"],
+    "experience_years": 6,
+    "certifications": ["AWS IoT Core", "Azure IoT Hub"],
+    "resolved_issues": [
+      "Sensor data dropouts",
+      "Real-time dashboard lag",
+      "Firmware OTA failures"
+    ],
+    "region": "Central India"
+  },
+  {
+    "employee_id": "T010",
+    "name": "Rahul Patel",
+    "role": "Augmented Reality Field Trainer",
+    "skills": ["Unity 3D", "Vuforia", "Technical Documentation"],
+    "experience_years": 5,
+    "certifications": ["AR/VR Developer", "Instructional Design"],
+    "resolved_issues": [
+      "AR overlay misalignment",
+      "Low-light tracking errors",
+      "Content update sync failures"
+    ],
+    "region": "Northwest India"
+  },
+  {
+    "employee_id": "T011",
+    "name": "Neha Gupta",
+    "role": "Spare Parts Coordinator",
+    "skills": ["Inventory Management", "ERP Integration", "Vendor Negotiation"],
+    "experience_years": 4,
+    "certifications": ["SAP MM", "Lean Inventory"],
+    "resolved_issues": [
+      "Stockout during urgent repair",
+      "Incorrect part cross-reference",
+      "Expedited shipping delays"
+    ],
+    "region": "South India"
+  },
+  {
+    "employee_id": "T012",
+    "name": "Arjun Singh",
+    "role": "Data Analyst – Field Service",
+    "skills": ["SQL & Python", "Predictive Modeling", "Report Automation"],
+    "experience_years": 3,
+    "certifications": ["Data Science Professional", "Tableau Desktop"],
+    "resolved_issues": [
+      "Inaccurate MTTR reporting",
+      "Incomplete ticket data cleanup",
+      "Dashboard performance tuning"
+    ],
+    "region": "East India"
+  },
+  {
+    "employee_id": "T013",
+    "name": "Sonal Verma",
+    "role": "Service Coordinator",
+    "skills": ["Scheduling", "Customer Communication", "SLA Management"],
+    "experience_years": 6,
+    "certifications": ["Project Management Professional", "Customer Service Excellence"],
+    "resolved_issues": [
+      "Urgent ticket triage",
+      "Cross-regional resource allocation",
+      "Priority escalation handling"
+    ],
+    "region": "Pan India"
+  },
+  {
+    "employee_id": "T014",
+    "name": "Karan Mehra",
+    "role": "Mobile Field App Developer",
+    "skills": ["React Native", "Offline Data Sync", "API Integration"],
+    "experience_years": 4,
+    "certifications": ["AWS Certified Developer", "Mobile UX Design"],
+    "resolved_issues": [
+      "App crashes on low bandwidth",
+      "Authentication token errors",
+      "Barcode scanner integration failures"
+    ],
+    "region": "North India"
+  },
+  {
+    "employee_id": "T015",
+    "name": "Leena Joshi",
+    "role": "Knowledge Manager",
+    "skills": ["Taxonomy Design", "Content Curation", "Search Optimization"],
+    "experience_years": 7,
+    "certifications": ["Information Architecture", "Knowledge Management Professional"],
+    "resolved_issues": [
+      "Poor search relevancy",
+      "Outdated SOP versions",
+      "Duplicate knowledge articles"
+    ],
+    "region": "West India"
+  },
+  {
+    "employee_id": "T016",
+    "name": "Rohan Iyer",
+    "role": "Quality Assurance Engineer",
+    "skills": ["Test Automation", "Integration Testing", "Performance Benchmarking"],
+    "experience_years": 5,
+    "certifications": ["ISTQB Certified Tester", "Lean Six Sigma Green Belt"],
+    "resolved_issues": [
+      "Regression test failures",
+      "Unexpected API latency",
+      "Data integrity bugs"
+    ],
+    "region": "East India"
+  },
+  {
+    "employee_id": "T017",
+    "name": "Maya Rao",
+    "role": "Field Training Specialist",
+    "skills": ["Technical Workshop Delivery", "Curriculum Development", "e-Learning Platforms"],
+    "experience_years": 8,
+    "certifications": ["Certified Technical Trainer", "Instructional Systems Design"],
+    "resolved_issues": [
+      "Low trainee engagement",
+      "Outdated training materials",
+      "Lack of hands-on practice setups"
+    ],
+    "region": "South India"
+  },
+  {
+    "employee_id": "T018",
+    "name": "Anil Chatterjee",
+    "role": "DevOps & Infrastructure Engineer",
+    "skills": ["AWS/Azure", "CI/CD Pipelines", "Container Orchestration"],
+    "experience_years": 9,
+    "certifications": ["AWS Solutions Architect", "Kubernetes Administrator"],
+    "resolved_issues": [
+      "Deployment pipeline breakdown",
+      "Infrastructure scaling failures",
+      "SSL certificate renewals"
+    ],
+    "region": "Central India"
+  },
+  {
+    "employee_id": "T019",
+    "name": "Devika Sharma",
+    "role": "Machine Learning Engineer",
+    "skills": ["Anomaly Detection Models", "Python & TensorFlow", "Data Pipelines"],
+    "experience_years": 4,
+    "certifications": ["Coursera ML Specialization", "AWS Machine Learning Specialty"],
+    "resolved_issues": [
+      "False-positive sensor alerts",
+      "Model drift in predictive maintenance",
+      "Data ingestion pipeline failures"
+    ],
+    "region": "North India"
+  },
+  {
+    "employee_id": "T020",
+    "name": "Suresh Rao",
+    "role": "UX/UI Designer – Field Tools",
+    "skills": ["Figma", "Mobile UX", "Accessibility"],
+    "experience_years": 5,
+    "certifications": ["NN/g UX Certification", "Mobile Accessibility"],
+    "resolved_issues": [
+      "Confusing navigation in field app",
+      "Unreadable AR overlays",
+      "Poor form validation error messaging"
+    ],
+    "region": "South India"
+  }
+]
