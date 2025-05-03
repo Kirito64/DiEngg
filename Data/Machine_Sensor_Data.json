@@ -1,0 +1,380 @@
+{
+  "MILL-001": [
+    {
+      "timestamp": "2025-05-01T08:00:00Z",
+      "sensors": {
+        "vibration_X_g": 0.23,
+        "temperature_C": 45.2,
+        "position_Z_mm": 125.346,
+        "force_N": 85.7
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:05:00Z",
+      "sensors": {
+        "vibration_X_g": 0.19,
+        "temperature_C": 45.5,
+        "position_Z_mm": 125.412,
+        "force_N": 88.1
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:10:00Z",
+      "sensors": {
+        "vibration_X_g": 0.21,
+        "temperature_C": 46.0,
+        "position_Z_mm": 125.389,
+        "force_N": 86.3
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:00:00Z",
+      "sensors": {
+        "vibration_X_g": 0.23,
+        "temperature_C": 45.2,
+        "position_Z_mm": 125.346,
+        "force_N": 85.7,
+        "acoustic_emission_count": 1200
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:05:00Z",
+      "sensors": {
+        "vibration_X_g": 0.19,
+        "temperature_C": 45.5,
+        "position_Z_mm": 125.412,
+        "force_N": 88.1,
+        "acoustic_emission_count": 1105
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:10:00Z",
+      "sensors": {
+        "vibration_X_g": 0.21,
+        "temperature_C": 46.0,
+        "position_Z_mm": 125.389,
+        "force_N": 86.3,
+        "acoustic_emission_count": 1250
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:15:00Z",
+      "sensors": {
+        "vibration_X_g": 0.27,
+        "temperature_C": 46.3,
+        "position_Z_mm": 125.450,
+        "force_N": 90.2,
+        "acoustic_emission_count": 1300
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:20:00Z",
+      "sensors": {
+        "vibration_X_g": 0.25,
+        "temperature_C": 46.7,
+        "position_Z_mm": 125.430,
+        "force_N": 87.8,
+        "acoustic_emission_count": 1180
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:25:00Z",
+      "sensors": {
+        "vibration_X_g": 0.18,
+        "temperature_C": 47.0,
+        "position_Z_mm": 125.375,
+        "force_N": 85.0,
+        "acoustic_emission_count": 1150
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:30:00Z",
+      "sensors": {
+        "vibration_X_g": 0.22,
+        "temperature_C": 47.4,
+        "position_Z_mm": 125.398,
+        "force_N": 89.4,
+        "acoustic_emission_count": 1275
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:35:00Z",
+      "sensors": {
+        "vibration_X_g": 0.24,
+        "temperature_C": 47.8,
+        "position_Z_mm": 125.432,
+        "force_N": 91.1,
+        "acoustic_emission_count": 1320
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:40:00Z",
+      "sensors": {
+        "vibration_X_g": 0.26,
+        "temperature_C": 48.1,
+        "position_Z_mm": 125.415,
+        "force_N": 92.3,
+        "acoustic_emission_count": 1350
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:45:00Z",
+      "sensors": {
+        "vibration_X_g": 0.29,
+        "temperature_C": 48.5,
+        "position_Z_mm": 125.460,
+        "force_N": 94.0,
+        "acoustic_emission_count": 1400
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:50:00Z",
+      "sensors": {
+        "vibration_X_g": 0.28,
+        "temperature_C": 48.9,
+        "position_Z_mm": 125.480,
+        "force_N": 93.5,
+        "acoustic_emission_count": 1380
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:55:00Z",
+      "sensors": {
+        "vibration_X_g": 0.30,
+        "temperature_C": 49.2,
+        "position_Z_mm": 125.500,
+        "force_N": 95.2,
+        "acoustic_emission_count": 1420
+      }
+    },
+    {
+      "timestamp": "2025-05-01T09:00:00Z",
+      "sensors": {
+        "vibration_X_g": 0.31,
+        "temperature_C": 49.5,
+        "position_Z_mm": 125.520,
+        "force_N": 96.0,
+        "acoustic_emission_count": 1450
+      }
+    },
+    {
+      "timestamp": "2025-05-01T09:05:00Z",
+      "sensors": {
+        "vibration_X_g": 0.32,
+        "temperature_C": 49.8,
+        "position_Z_mm": 125.540,
+        "force_N": 97.0,
+        "acoustic_emission_count": 1480
+      }
+    },
+    {
+      "timestamp": "2025-05-01T09:10:00Z",
+      "sensors": {
+        "vibration_X_g": 0.33,
+        "temperature_C": 50.1,
+        "position_Z_mm": 125.560,
+        "force_N": 98.2,
+        "acoustic_emission_count": 1500
+      }
+    }
+  ],
+  "LATHE-002": [
+    {
+      "timestamp": "2025-05-01T08:00:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.15,
+        "temperature_C": 50.1,
+        "position_X_mm": 78.994,
+        "force_N": 102.3
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:05:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.17,
+        "temperature_C": 50.4,
+        "position_X_mm": 79.015,
+        "force_N": 100.8
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:10:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.14,
+        "temperature_C": 50.0,
+        "position_X_mm": 78.970,
+        "force_N": 101.5
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:00:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.15,
+        "temperature_C": 50.1,
+        "position_X_mm": 78.994,
+        "force_N": 102.3,
+        "acoustic_emission_count": 950
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:05:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.17,
+        "temperature_C": 50.4,
+        "position_X_mm": 79.015,
+        "force_N": 100.8,
+        "acoustic_emission_count": 980
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:10:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.14,
+        "temperature_C": 50.0,
+        "position_X_mm": 78.970,
+        "force_N": 101.5,
+        "acoustic_emission_count": 930
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:15:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.18,
+        "temperature_C": 50.7,
+        "position_X_mm": 79.002,
+        "force_N": 103.1,
+        "acoustic_emission_count": 1020
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:20:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.16,
+        "temperature_C": 51.0,
+        "position_X_mm": 79.030,
+        "force_N": 99.7,
+        "acoustic_emission_count": 970
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:25:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.20,
+        "temperature_C": 51.3,
+        "position_X_mm": 79.010,
+        "force_N": 104.5,
+        "acoustic_emission_count": 1080
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:30:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.19,
+        "temperature_C": 51.6,
+        "position_X_mm": 79.048,
+        "force_N": 102.9,
+        "acoustic_emission_count": 1050
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:35:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.13,
+        "temperature_C": 51.2,
+        "position_X_mm": 78.990,
+        "force_N": 100.2,
+        "acoustic_emission_count": 940
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:40:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.21,
+        "temperature_C": 51.9,
+        "position_X_mm": 79.075,
+        "force_N": 105.8,
+        "acoustic_emission_count": 1105
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:45:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.18,
+        "temperature_C": 52.2,
+        "position_X_mm": 79.100,
+        "force_N": 107.4,
+        "acoustic_emission_count": 1125
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:50:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.22,
+        "temperature_C": 52.5,
+        "position_X_mm": 79.120,
+        "force_N": 108.9,
+        "acoustic_emission_count": 1150
+      }
+    },
+    {
+      "timestamp": "2025-05-01T08:55:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.23,
+        "temperature_C": 52.8,
+        "position_X_mm": 79.140,
+        "force_N": 109.6,
+        "acoustic_emission_count": 1170
+      }
+    },
+    {
+      "timestamp": "2025-05-01T09:00:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.24,
+        "temperature_C": 53.1,
+        "position_X_mm": 79.160,
+        "force_N": 110.4,
+        "acoustic_emission_count": 1190
+      }
+    },
+    {
+      "timestamp": "2025-05-01T09:05:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.25,
+        "temperature_C": 53.4,
+        "position_X_mm": 79.180,
+        "force_N": 111.2,
+        "acoustic_emission_count": 1210
+      }
+    },
+    {
+      "timestamp": "2025-05-01T09:10:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.26,
+        "temperature_C": 53.7,
+        "position_X_mm": 79.200,
+        "force_N": 112.0,
+        "acoustic_emission_count": 1230
+      }
+    },
+    {
+      "timestamp": "2025-05-01T09:15:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.27,
+        "temperature_C": 54.0,
+        "position_X_mm": 79.220,
+        "force_N": 112.8,
+        "acoustic_emission_count": 1250
+      }
+    },
+    {
+      "timestamp": "2025-05-01T09:20:00Z",
+      "sensors": {
+        "vibration_Y_g": 0.28,
+        "temperature_C": 54.3,
+        "position_X_mm": 79.240,
+        "force_N": 113.6,
+        "acoustic_emission_count": 1270
+      }
+    }
+  ]
+}
