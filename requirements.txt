@@ -5,3 +5,13 @@ scikit-learn
 tensorflow
 openai
 loadenv
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.4.2
+pydantic-settings==2.0.3
+openai==1.77.0
+pymilvus==2.5.8
+langchain==0.0.335
+python-multipart==0.0.6
+loguru==0.7.2
+urllib3<2.0.0 
