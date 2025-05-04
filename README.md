@@ -33,27 +33,27 @@ Diengg solves these problems through an AI-powered diagnostic assistant that:
 
 ```mermaid
 graph TD
-    A(Start) --> B(Ticket is Raised)
+    A[Start] --> B[Ticket is Raised]
 
-    B --> C1(Pull Past Ticket History)
-    C1 --> C1a(Find similar tickets)
-    C1 --> C1b(Extract useful info)
+    B --> C1[Pull Past Ticket History]
+    C1 --> C1a[Find similar tickets]
+    C1 --> C1b[Extract useful info]
 
-    B --> C2(Pull Sensor Data (at/around issue time))
-    C2 --> C2a(Analyze for Anomalies)
-    C2a --> C2b(Check Anomaly Relevance to Issue)
-    C2b --> C2c(Generate Possible Cause Report)
+    B --> C2[Pull Sensor Data around issue time]
+    C2 --> C2a[Analyze for Anomalies]
+    C2a --> C2b[Check Anomaly Relevance to Issue]
+    C2b --> C2c[Generate Possible Cause Report]
 
-    B --> C3(Pull Related Documentation)
-    C3 --> C3a(Manuals)
-    C3 --> C3b(SOPs)
-    C3 --> C3c(Known issue reports)
+    B --> C3[Pull Related Documentation]
+    C3 --> C3a[Manuals]
+    C3 --> C3b[SOPs]
+    C3 --> C3c[Known issue reports]
 
-    C1b --> D(Consolidate All Data)
+    C1b --> D[Consolidate All Data]
     C2c --> D
     C3c --> D
 
-    D --> E(Generate Final Report)
+    D --> E[Generate Final Report]
 ```
 
 *The flowchart illustrates how Diengg processes ticket information by pulling from past ticket history, sensor data, and related documentation to generate comprehensive diagnostic reports.*
