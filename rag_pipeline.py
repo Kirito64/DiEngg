@@ -5,6 +5,7 @@ from pymilvus import connections, Collection, FieldSchema, CollectionSchema, Dat
 import logging
 from app.config import get_settings
 import uuid
+from rag_utils import get_embedding, search_similar_tickets
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -88,18 +89,6 @@ def load_tickets(file_path):
             return tickets
     except Exception as e:
         logger.error(f"Failed to load tickets: {e}")
-        raise
-
-# Generate embedding for a text chunk
-def get_embedding(text):
-    try:
-        response = client.embeddings.create(
-            model='text-embedding-ada-002',
-            input=text
-        )
-        return response.data[0].embedding
-    except Exception as e:
-        logger.error(f"Failed to generate embedding: {e}")
         raise
 
 # Ingest data into Milvus
