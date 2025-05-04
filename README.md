@@ -1,21 +1,90 @@
 # ⚙️ Diengg – AI Copilot for Field Service Engineers
 
-**Diengg** is an AI-powered diagnostic assistant designed for field service engineers. It helps technicians diagnose issues faster on-site by retrieving relevant historical fixes, past ticket resolutions, and internal knowledge from manuals, SOPs, and documentation.
+> 🧠 "Your on-site diagnostic intelligence—engineered for engineers."
 
-> 🧠 “Your on-site diagnostic intelligence—engineered for engineers.”
+## 🔍 The Problem
 
----
+Field service engineers face a critical challenge in the form of knowledge fragmentation and accessibility when diagnosing equipment issues on-site:
+
+### Key Challenges:
+
+- **Knowledge Silos**: Valuable diagnostic information is scattered across multiple systems - ticket databases, equipment manuals, maintenance logs, and SOPs - making it difficult to access the right information at the right time.
+
+- **Time Pressure**: Engineers often work under strict time constraints with equipment downtime directly impacting client operations and revenue. The pressure to resolve issues quickly can lead to missed diagnostic steps or incomplete solutions.
+
+- **Information Overload**: A single piece of industrial equipment may have thousands of pages of documentation, making it impractical to manually search for relevant information while on-site.
+
+- **Experience Gap**: Experienced engineers carry invaluable tacit knowledge that is lost when they retire or leave. New technicians lack access to this accumulated wisdom, creating inconsistent service quality.
+
+- **Connectivity Limitations**: Many service locations have poor internet connectivity, limiting real-time access to online knowledge bases or the ability to consult remote experts.
+
+- **Repeated Issues**: Without a system to learn from past resolutions, engineers often "reinvent the wheel" when facing issues that have been previously solved by colleagues.
+
+These challenges result in longer mean-time-to-repair (MTTR), higher service costs, excessive escalations to L2/L3 support, and ultimately, reduced customer satisfaction.
+
+## 🎯 Our Approach
+
+Diengg solves these problems through an AI-powered diagnostic assistant that:
+
+1. **Retrieval-Augmented Generation (RAG)** - Combines knowledge retrieval with generative AI to find the most relevant solutions from past cases
+2. **Unified Knowledge Access** - Centralizes access to ticket logs, manuals, SOPs, and field reports in a searchable format
+3. **Intelligent Similarity Matching** - Uses vector embeddings to find semantically similar past issues, even when described differently
+4. **Guided Diagnostic Workflow** - As shown in our system flowchart:
+
+![Diengg Diagnostic Workflow](images/flowchart.png)
+
+*The flowchart illustrates how Diengg processes ticket information by pulling from past ticket history, sensor data, and related documentation to generate comprehensive diagnostic reports.*
+
+The system works by:
+1. Processing ticket information when an issue is raised
+2. Simultaneously pulling from three knowledge sources:
+   - Past ticket history (finding similar tickets and extracting useful information)
+   - Sensor data (analyzing anomalies relevant to the issue)
+   - Related documentation (manuals, SOPs, known issue reports)
+3. Consolidating all data sources
+4. Generating a comprehensive diagnostic report with actionable solutions
+
+## ⚙️ Setup Instructions
+
+### Prerequisites
+- Python 3.8+
+- Docker and Docker Compose
+- OpenAI API key
+- Milvus or similar vector database
+
+### Installation
+
+```bash
+git clone https://github.com/yourorg/diengg.git
+cd diengg
+
+# Set up backend
+cd backend
+pip install -r requirements.txt
+
+# Configure environment variables
+cp .env.example .env
+# Edit .env with your API keys and configuration
+
+# Start the vector database
+docker-compose up -d milvus
+
+# Run the application
+python -m app.main
+
+# Start the frontend (Streamlit)
+cd ../ui
+streamlit run app.py
+```
 
 ## 🚀 What It Does
 
-- ✅ Understands the issue from a technician’s notes or ticket input  
+- ✅ Understands the issue from a technician's notes or ticket input  
 - 🔍 Searches past ticket logs, fixes, and SOPs using **Retrieval-Augmented Generation (RAG)**  
 - 🧩 Returns the most relevant past fixes and diagnostic steps  
 - 🛠️ Equips engineers with faster decision-making and reduced trial-and-error
 
----
-
-## 🧱 Architecture
+## 🧱 Technical Architecture
 
 ```mermaid
 graph TD
@@ -27,8 +96,6 @@ graph TD
   E & F --> G[Technician Acts + Feedback Loop]
 ```
 
----
-
 ## 🔧 Tech Stack
 
 | Layer           | Tech/Tool                        |
@@ -37,26 +104,22 @@ graph TD
 | Vector DB       | Milvus                           |
 | Backend         | Python (FastAPI)                 |
 | RAG Framework   | LangChain                        |
-| Interface       |  React, or CLI                   |
+| Interface       | Streamlit                        |
 | Deployment      | Docker                           |
-
----
 
 ## 📝 Sample Workflow
 
 1. **Engineer logs issue**:  
-   *“Unit 12 showing overcurrent alarm. Error code E43 blinking.”*
+   *"Unit 12 showing overcurrent alarm. Error code E43 blinking."*
 
 2. **AI Engine**:
    - Summarizes and embeds the description  
    - Searches the knowledge base for top 3 similar cases  
-   - Retrieves past fixes: “Replace CT cable – Error E43 triggered by surge.”
+   - Retrieves past fixes: "Replace CT cable – Error E43 triggered by surge."
 
 3. **Output**:
    - Returns fix steps, parts used, and resolution time  
    - Offers direct link to ticket logs or SOPs
-
----
 
 ## 🧠 Knowledge Base Sources
 
@@ -69,9 +132,7 @@ Diengg can be connected to:
 
 All content is **chunked and embedded** into a vector DB for fast semantic search.
 
----
-
-## ⚡ API Endpoints (Sample)
+## ⚡ API Endpoints
 
 | Method | Endpoint           | Description                        |
 |--------|--------------------|------------------------------------|
@@ -80,16 +141,12 @@ All content is **chunked and embedded** into a vector DB for fast semantic searc
 | `GET`  | `/kb/search?q=...` | Search KB manually                 |
 | `POST` | `/feedback`        | Submit feedback on AI suggestions  |
 
----
-
 ## 📊 Metrics You Can Track
 
 - Avg. similarity score returned  
 - % of queries resolved without escalation  
 - Top repeated fixes  
 - Technician feedback score on AI suggestions
-
----
 
 ## 📁 Project Structure
 
@@ -128,36 +185,14 @@ diengg/
 ├── embeddings/           # Embedding + chunking logic
 │   └── embed_kb.py
 │
-├── vector_db/            # Setup for Pinecone / FAISS
+├── vector_db/            # Setup for Milvus
 │
-├── ui/                   # Frontend (Streamlit / React)
+├── ui/                   # Frontend (Streamlit)
 │
 ├── kb_samples/           # Sample PDFs, ticket logs
 │
 └── README.md
 ```
-
----
-
-## 🛠️ Setup Instructions
-
-```bash
-git clone https://github.com/yourorg/diengg.git
-cd diengg
-
-# Set up backend
-cd backend
-pip install -r requirements.txt
-python main.py
-
-# Run frontend (if Streamlit)
-cd ../ui
-streamlit run app.py
-```
-
-🔑 Add your OpenAI / Pinecone / other API keys in `.env`
-
----
 
 ## 🔍 Example Input / Output
 
@@ -178,16 +213,6 @@ streamlit run app.py
 }
 ```
 
----
-
-## 🧪 Demo Scenarios
-
-- Upload `ticket_logs.csv` and `manual.pdf` as KB  
-- Run `/diagnose` with new field issue descriptions  
-- Show real-time suggestions, confidence, and linked resolutions
-
----
-
 ## 📢 Future Extensions
 
 - ✅ OCR for handwritten technician notes  
@@ -196,25 +221,13 @@ streamlit run app.py
 - ✅ Feedback training loop to improve recommendations  
 - ✅ Image recognition of machine parts for diagnostics
 
----
-
-## 🧠 Why Diengg?
-
-Field service teams are overwhelmed with repeated issues, unclear SOPs, and poor access to past data. **Diengg gives every engineer a second brain**—on the field, offline or online, with just their ticket text.
-
----
-
 ## 🤝 Contributing
 
-Pull requests welcome! Please raise an issue first to discuss what you’d like to add.
-
----
+Pull requests welcome! Please raise an issue first to discuss what you'd like to add.
 
 ## 📄 License
 
-MIT License – do whatever you want, just don’t forget to credit the builders 💡
-
----
+MIT License – do whatever you want, just don't forget to credit the builders 💡
 
 ## 🧑‍💻 Built At
 
