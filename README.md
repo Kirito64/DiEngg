@@ -31,7 +31,8 @@ Diengg solves these problems through an AI-powered diagnostic assistant that:
 3. **Intelligent Similarity Matching** - Uses vector embeddings to find semantically similar past issues, even when described differently
 4. **Guided Diagnostic Workflow** - As shown in our system flowchart:
 
-flowchart TD
+```mermaid
+graph TD
     A(Start) --> B(Ticket is Raised)
 
     B --> C1(Pull Past Ticket History)
@@ -53,7 +54,7 @@ flowchart TD
     C3c --> D
 
     D --> E(Generate Final Report)
-
+```
 
 *The flowchart illustrates how Diengg processes ticket information by pulling from past ticket history, sensor data, and related documentation to generate comprehensive diagnostic reports.*
 
